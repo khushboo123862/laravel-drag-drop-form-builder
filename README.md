@@ -50,5 +50,7 @@ Prerequisites: Ensure you have **PHP >= 8.2**, **Composer**, and **Node.js** ins
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_GITHUB_USERNAME/laravel-drag-drop-form-builder.git](https://github.com/YOUR_GITHUB_USERNAME/laravel-drag-drop-form-builder.git)
+git clone https://github.com/khushboo123862/laravel-drag-drop-form-builder.git
 cd laravel-drag-drop-form-builder
+cd laravel-drag-drop-form-builder
+``` <-- Ye teen backticks aapko line 55 par lagane hain
