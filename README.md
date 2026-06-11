@@ -1,64 +1,54 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 🛠️ Full-Stack Drag & Drop Form Builder
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A professional, high-performance, and responsive **Drag-and-Drop Form Builder** built strictly using the **Laravel Ecosystem (Blade Components)** and **Tailwind CSS**. This application features a dual-panel layout allowing seamless form creation, dynamic live property configuration, and instant evaluation-ready JSON schema compilation.
 
-## About Laravel 
+Developed as a showcase project focusing on modular architecture, clean code practices, and advanced frontend-to-backend state synchronization.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Core Features & Implementation
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 1. Interactive Drag & Drop Workflow
+* **Dynamic Canvas:** A dashed-border drop zone that tracks field drops in real-time, updates layouts instantly, and features a clean placeholder state when empty.
+* **Two-Column Field Palette:** A neatly structured sidebar containing draggable architectural, input, and selection fields.
 
-## Learning Laravel
+### 2. Strict Laravel Blade Component Architecture
+Adhering to strict production guidelines, **zero raw HTML inputs are used**. Every element is fully encapsulated within reusable Blade Components utilizing `@props`, `@if`, and `@foreach` loops for absolute maintainability:
+* **Inputs:** Text Input, Numeric Input, Email Input (with format validation), Date Picker.
+* **Selections:** Dropdown, Radio Select Toggles, Checkbox Groups (with add/remove row capabilities).
+* **Structure & Files:** File Upload Asset, Text Area (Large Description), Section Head Title, Page Break.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 3. Placed Field Shortcuts (In-Canvas Actions)
+Once dropped onto the canvas, each element is rendered inside an interactive wrapper containing three vital shortcuts:
+* **Drag Handle:** Re-orders the internal field-order array dynamically.
+* **Edit Icon:** Switches the right panel to the **Property Configurer** sub-tab for active customization.
+* **Duplicate Icon:** Instantly clones the field structure right below it, preserving all active state configurations.
+* **Delete Icon:** Flawlessly removes the field from the current canvas layout state.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 4. Live Property Configurer Panel
+Clicking the edit icon opens a powerful structural sub-panel that mutates the active component's state with **live preview** synchronization:
+* Modify Field Labels, Placeholders, Default Values, Required/Optional toggles, and inject custom Tailwind utility classes (`w-full`, etc.) seamlessly.
 
-## Laravel Sponsors
+### 5. High-Fidelity JSON Schema Compilation
+* Powered by a custom JavaScript engine that aggregates all layout states, clicking the **"COMPILE JSON SCHEMA"** button outputs a structured, clean JSON array of objects representing the fully custom-built form configuration inside the browser console or custom alert.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+---
 
-### Premium Partners
+## 🛠️ Architecture & Tech Stack
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+* **Backend Engine:** Laravel 10.x / 11.x
+* **Frontend Templating:** Laravel Blade (Component-Driven Architecture)
+* **Styling Framework:** Tailwind CSS
+* **State & Interaction Logic:** Vanilla JavaScript (Data-Transfer API)
+* **Environment Setup:** Local development server powered by PHP Artisan
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 💾 System Installation & Local Setup
 
-## Code of Conduct
+Prerequisites: Ensure you have **PHP >= 8.2**, **Composer**, and **Node.js** installed on your machine.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/YOUR_GITHUB_USERNAME/laravel-drag-drop-form-builder.git](https://github.com/YOUR_GITHUB_USERNAME/laravel-drag-drop-form-builder.git)
+cd laravel-drag-drop-form-builder
